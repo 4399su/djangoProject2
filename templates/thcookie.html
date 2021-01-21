@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>三天免登录</title>
 </head>
 <body>
 <form action="/thcookie/" enctype="multipart/form-data" method="post">
     {% csrf_token %}
     <p>
-        <lable for="uname" >姓名</lable> <input type="text" name=" uname"id="uname">
+        <lable for="uname" >姓名</lable> <input type="text" name=" uname"id="uname" value="{{ uname }}">
     </p>
     <p>
-    <lable for="pwd" >密码</lable> <input type="password" name="pwd" id="pwd">
+    <lable for="pwd" >密码</lable> <input type="password" name="pwd" id="pwd" value="{{ pwd }}">
+    </p>
+    <p>
+    <lable for="ch" >记住密码</lable> <input type="ch" name="ch" id="ch" value="1">
     </p>
      <p>
      <input type="submit" value="上传">
