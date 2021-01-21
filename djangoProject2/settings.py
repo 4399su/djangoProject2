@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'retest',
     'fileUpload',
     'Cookie',
+    'thCookie',
 ]
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

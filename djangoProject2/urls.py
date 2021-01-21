@@ -21,4 +21,5 @@ urlpatterns = [
     path('', include('retest.urls')),
     path('', include('fileUpload.urls')),
     path('', include('Cookie.urls')),
+    path('', include('thCookie.urls')),
 ]
