@@ -19,4 +19,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('retest.urls')),
+    path('', include('fileUpload.urls')),
+    path('', include('Cookie.urls')),
 ]
