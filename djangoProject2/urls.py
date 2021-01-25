@@ -23,4 +23,5 @@ urlpatterns = [
     path('', include('Cookie.urls')),
     path('', include('thCookie.urls')),
     path('', include('viewtest.urls')),
+    path('', include('filtertest.urls')),
 ]

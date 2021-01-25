@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load filter_mark %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{ num|add:"2" }}
+{{ str|capfirst }}
+{{ d|date:'Y-m-d h:i:s' }}
+{{ num |divisibleby:"2" }}
+{{ str| first }}
+
+{{ urlstr|safe }} 
+{{ str|truncatewords:'2' }}
+</body>
+</html>
